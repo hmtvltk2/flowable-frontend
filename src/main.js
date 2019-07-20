@@ -3,9 +3,10 @@ import './plugins/vuetify'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import { currency } from './currency'
 
 Vue.config.productionTip = false
-
+Vue.filter('currency', currency)
 new Vue({
   router,
   store,
